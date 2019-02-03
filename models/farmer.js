@@ -13,8 +13,8 @@ const GeoSchema = new Schema({
     }
 });
 
-// create ninja Schema & model
-const NinjaSchema = new Schema({
+// create farmer Schema & model
+const FarmerSchema = new Schema({
     name: {
         type: String,
         required: [true, 'Name field is required']
@@ -30,6 +30,6 @@ const NinjaSchema = new Schema({
      geometry: GeoSchema
 });
 
-const Ninja = mongoose.model('ninja', NinjaSchema);
+const farmer = mongoose.model('farmer', FarmerSchema);
 
-module.exports = Ninja;
+module.exports = farmer;
