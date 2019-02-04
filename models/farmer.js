@@ -30,6 +30,8 @@ const FarmerSchema = new Schema({
      geometry: GeoSchema
 });
 
-const farmer = mongoose.model('farmer', FarmerSchema);
+const Farmer = mongoose.model('farmer', FarmerSchema);
 
-module.exports = farmer;
+
+module.exports = Farmer;
+
